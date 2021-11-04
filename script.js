@@ -18,14 +18,14 @@ function drawGame(){
 	
 	scene.background=texture.load('./nebo.jpg');
 	
-	const plane=new THREE.PlaneGeometry(1000,1000,1000);
+	const plane=new THREE.PlaneGeometry(1000,1000);
 	const material=new THREE.MeshBasicMaterial({map:texture.load("grass.jpg")});
 	
 	const mesh=new THREE.Mesh(plane,material);
 	
 	scene.add(mesh);
 	
-	mesh.rotation.x=radians(-90);
+	mesh.rotation.x=radians(0);
 	
 	camera.position.z=510;
 	//camera.rotation.x=radians(-40);
